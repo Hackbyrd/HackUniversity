@@ -10,6 +10,7 @@ var app = express();
 // configure
 app.use(bodyParser.json()); // config for body parser
 app.use(morgan("dev"));
+app.use("/static", express.static("static"));
 
 /*********** End Setup **********/
 /*********** Database/Models **********/
@@ -52,8 +53,9 @@ var User = mongoose.model('User', userSchema);
 
 // home
 app.get("/", function (req, res) {
-  console.log("Home");
-  res.send("Home");
+  console.log("Send index.html");
+  var path = __dirname + "/index.html";
+  res.sendFile(path);
 });
 
 // show one user
@@ -102,6 +104,7 @@ app.put("/users/:id", function (req, res) {
 app.post("/users", function (req, res) {
   console.log("Create User");
   var newUser = new User(req.body.user);
+  console.log(req.body);
 
   newUser.save(function (err, newUser) {
     if (err) {
