@@ -1,4 +1,5 @@
 /********** Setup **********/
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require("mongoose");
@@ -8,7 +9,7 @@ var app = express();
 
 // configure
 app.use(bodyParser.json()); // config for body parser
-app.use(morgan("dev")); // logs all requests
+app.use(morgan("dev"));
 
 /*********** End Setup **********/
 /*********** Database/Models **********/
@@ -28,12 +29,12 @@ db.once('open', function (callback) {
 // Set up schema
 var Schema = mongoose.Schema;
 
-// User schema
+// user schema
 var userSchema = new Schema({
-  firstName:  String,
-  lastName: String,
-  email:    String,
-  password: String,
+  firstName:    String,
+  lastName:     String,
+  email:        { type: String, index: { unique: true } },
+  age:          Number,
 });
 
 // method for user schema
@@ -42,30 +43,17 @@ userSchema.methods.toString = function () {
 }
 
 // create User model
-var User = mongoose.model('User', commentSchema);
+var User = mongoose.model('User', userSchema);
 
 /*********** End Database/Models **********/
 /*********** Controllers **********/
 
-// test URL
+// content-type: application/json
+
+// home
 app.get("/", function (req, res) {
-  console.log("Test Successful!");
-  res.send("Test Successful!");
-});
-
-// log user signup
-app.post("/user", function (req, res) {
-  console.log("Create User");
-  var newUser = new User(req.body.user);
-
-  newUser.save(function (err, newUser) {
-    if (err) {
-      console.error(err);
-      res.status(422).send("Error creating user.");
-    } else {
-      res.json(JSON.stringify(newUser.toString()));
-    }
-  });
+  console.log("Home");
+  res.send("Home");
 });
 
 // show one user
@@ -82,7 +70,7 @@ app.get("/users/:id", function (req, res) {
   });
 });
 
-// show all users signed up
+// show all users
 app.get("/users", function (req, res) {
   console.log("Show All Users");
   User.find(function (err, users) {
@@ -96,7 +84,42 @@ app.get("/users", function (req, res) {
   });
 });
 
-// destory
+// update one user
+app.put("/users/:id", function (req, res) {
+  console.log("Update User");
+  User.findOneAndUpdate({ "_id": req.params.id }, req.body.user, { "upsert": true }, function(err, user) {
+    if (err) {
+      console.error(err);
+      res.status(422).send("Error updating user.");
+    } else {
+      console.log(user);
+      res.json(JSON.stringify(user.toString()));
+    }
+  });
+});
+
+// create new user
+app.post("/users", function (req, res) {
+  console.log("Create User");
+  var newUser = new User(req.body.user);
+
+  newUser.save(function (err, newUser) {
+    if (err) {
+      console.error(err);
+
+      // check if email exists
+      if (err.message.indexOf("duplicate key error") > 0)
+        res.status(422).send("Email already exists! Please try different email!");
+      else
+        res.status(422).send("Error creating user.");
+
+    } else {
+      res.json(JSON.stringify(newUser.toString()));
+    }
+  });
+});
+
+// destroy user
 app.delete("/users/:id", function (req, res) {
   console.log("Delete User");
   User.remove({ "_id": req.params.id }, function (err, response) {
