@@ -1,4 +1,15 @@
+function backdropResize() {
+  $("#header").css("height", $(window).height());
+  $("#header").css("width", $(window).width());
+}
+
 $(function() {
+
+  backdropResize();
+
+  $(window).resize(function () {
+    backdropResize();
+  });
 
   $(document).on("click", "#sign-up-btn", function () {
 
@@ -18,3 +29,8 @@ $(function() {
 
   });
 });
+
+function backdropResize() {
+  $("#header").css("height", $(window).height());
+  $("#header").css("width", $(window).width());
+}
