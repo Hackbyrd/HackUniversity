@@ -1,0 +1,26 @@
+{
+  "name": "HackUniversity",
+  "version": "1.0.0",
+  "description": "Non-profit organization for teaching students computer science",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Hackbyrd/HackUniversity.git"
+  },
+  "author": "Jonathan Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hackbyrd/HackUniversity/issues"
+  },
+  "homepage": "https://github.com/Hackbyrd/HackUniversity",
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3",
+    "mongoose": "^4.0.1",
+    "morgan": "^1.5.2",
+    "nodemon": "^1.3.7"
+  }
+}
