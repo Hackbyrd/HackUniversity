@@ -16,8 +16,8 @@ var flash         = require('connect-flash');
 var port = process.env.PORT || 3000
 
 // database
-// var configDB = require('./middleware/database.js');
-// mongoose.connect(configDB.url);
+var configDB = require('./middleware/database.js');
+mongoose.connect(configDB.url);
 
 var app = express();
 
