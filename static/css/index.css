@@ -1,0 +1,90 @@
+#hackuniversitylogo {
+  margin: 20px;
+
+}
+
+#window-container {
+  height: 400px;
+  padding: 0px;
+}
+
+.text-pink {
+  color: #ff8484;
+}
+
+.text-blue {
+  color: #46bdf9;
+}
+
+.text-blue-dark {
+  color: #337ab7;
+}
+
+.btn-pink-custom {
+  border-radius: 0;
+  color: #fff;
+  background-color: #ff8484;
+}
+
+.btn-pink-custom:hover,
+.btn-pink-custom:focus,
+.btn-pink-custom:active {
+  color: #fff;
+  background-color: #f9a7a7;
+}
+
+.team-profile {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+::-webkit-input-placeholder {
+  color: black;
+}
+:-moz-placeholder {
+  color: black;
+}
+::-moz-placeholder {
+  color: black;
+}
+:-ms-input-placeholder {
+  color: black;
+}
+
+.action-icon {
+  -webkit-transition: -webkit-transform .25s ease-in-out;
+  -moz-transition: -webkit-transform .25s ease-in-out;
+  -ms-transition: -webkit-transform .25s ease-in-out;
+  -o-transition: -webkit-transform .25s ease-in-out;
+  transition: -webkit-transform .25s ease-in-out;
+}
+
+.btn-white {
+  border-radius: 0;
+  color: white;
+  background-color: rgba(70, 189, 249, 1);
+}
+
+.btn-white:focus,
+.btn-white:active {
+  color: white;
+  background-color: rgba(70, 189, 249, 1);
+}
+
+.btn-white:hover {
+  color: white;
+  background-color: rgba(70, 189, 249, .7);
+}
+
+.btn-white:hover .action-icon {
+  color: white;
+  background-color: rgba(70, 189, 249, .7);
+
+  -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+  -moz-transform: rotate(360deg); /* Chrome, Safari, Opera */
+  -ms-transform: rotate(360deg); /* IE 9 */
+  -o-transform: rotate(360deg); /* Chrome, Safari, Opera */
+  transform: rotate(360deg);
+  cursor: pointer;
+}

@@ -1,0 +1,388 @@
+<% /* http://www.w3schools.com/js/default.asp */ %>
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hack University</title>
+
+    <% /* Bootstrap Core CSS */ %>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <% /* Custom CSS */ %>
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    <% /* Custom Fonts */ %>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <% /* Favicon */ %>
+    <!--[if IE]><link rel="shortcut icon" href="img/favicon.ico"><![endif]-->
+
+    <% /* Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. */ %>
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="img/favicon.png">
+
+    <% /*  Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. */ %>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <% /* HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries */ %>
+    <% /* WARNING: Respond.js doesn't work if you view the page via file:// */ %>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <% /* Navigation */ %>
+    <a id="menu-toggle" href="#" class="btn btn-white btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-white btn-lg pull-right toggle"><i class="fa fa-times fa-lg action-icon"></i></a>
+        <li class="sidebar-brand"><a href="#top">Menu</a></li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#brand">Brand</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <% /* Header */ %>
+    <header id="top" class="header">
+      <div class="text-vertical-center">
+        <div id="window-container" class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-offset-1 col-md-offset-2 col-lg-offset-3">
+          <img src="img/HackUniversity.svg" id="hackuniversitylogo">
+          <h2 class="text-blue-dark">Where students learn to code for free.</h2>
+          <br/>
+          <a href="#about" class="btn btn-pink-custom btn-lg">Learn More</a>
+          <a href="#CHEC" class="btn btn-pink-custom btn-lg">Sign Up Now</a>
+        </div>
+      </div>
+    </header>
+
+    <% /* About */ %>
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="text-pink">What is Hack University?</h2>
+            <hr class="small text-blue">
+            <p class="lead text-blue">
+              <b>Hack University</b> is a non-profit organization whose <b>mission</b> is to provide students with a <b>unique learning experience</b> in the subject of <b>computer science</b>. At Hack University, students have the opportunity to take <b>free classes</b> taught by <b>real world professionals</b>.
+              <!-- Hack University is a 501(c)(3) non-profit organization that aims to help DC high school students get exposed to the field of computer science.
+              At HackU our goal is to teach students all the <b>basic programming concepts</b> needed to <b>write computer programs</b>
+              and <b>create simple interactive websites</b>. Some topics we cover include data structures, boolean logic,
+              objects oriented design, bit manipulation, JSON data formatting, and JavaScript on the web. -->
+            </p>
+            <!-- <p class="lead text-blue">
+              We are not another coding tutorial website, nor another online business that charges people for coding lessons. We bring in technical leaders from DC, Maryland, and Virginia area
+              with years of experience to help students gain technical skills and knowledge. <b>Our service is FREE</b> and always will be!
+            </p> -->
+          </div>
+        </div>
+        <% /* /.row */ %>
+      </div>
+      <% /* /.container */ %>
+    </section>
+
+    <% /* What you'll be doing */ %>
+    <section id="services" class="services bg-primary">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-10 col-lg-offset-1">
+            <h2>What you'll be doing</h2>
+            <hr class="small">
+            <div class="row" style="margin-top: 40px;">
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-graduation-cap fa-stack-1x text-primary"></i>
+                </span>
+                  <h3><strong>Learning</strong></h3>
+                  <h4>Learning how to code</h4>
+                  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-light">Learn More</a> -->
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-gavel fa-stack-1x text-primary"></i>
+                </span>
+                  <h3><strong>Building</strong></h3>
+                  <h4>Building applications</h4>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-paint-brush fa-stack-1x text-primary"></i>
+                </span>
+                  <h3><strong>Designing</strong></h3>
+                  <h4>Designing websites</h4>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-rocket fa-stack-1x text-primary"></i>
+                </span>
+                  <h3><strong>Deploying</strong></h3>
+                  <h4>Deploying your work</h4>
+                </div>
+              </div>
+              <% /* /.row (nested) */ %>
+            </div>
+            <% /* /.row (nested) */ %>
+          </div>
+          <% /* /.col-lg-10 */ %>
+        </div>
+        <% /* /.row */ %>
+      </div>
+      <% /* /.container */ %>
+    </section>
+
+    <% /* Columbia Heights Education Campus */ %>
+    <section id="CHEC" class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="text-pink">Hack University @ <a href="http://checdc.org/home.php">Columbia Heights Education Campus</a></h2>
+            <hr class="small text-blue">
+            <row>
+              <div class="col-xs-12 col-sm-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.7601634163216!2d-77.03555999999999!3d38.92945900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c821b2ee785b%3A0xb6a7c937aa42cb6d!2sColumbia+Heights+Education+Campus!5e0!3m2!1sen!2sus!4v1430631932420" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+              </div>
+
+              <div class="col-xs-12 col-sm-6">
+                <p class="lead text-blue text-left">
+                  We have partnered with <b>Columbia Heights Education Campus</b> to launch our first summer programming class. We encourage students who attend CHEC to sign up
+                  to learn JavaScript programming. The first class will be taught by <b>Jonathan Chen</b>, the Chief Technology Officer and co-founder of <a href="https://www.fiscalnote.com">FiscalNote Inc.</a>
+                </p>
+                <p class="lead text-blue text-left">
+                  <b><u>Program Information:</u></b><br/>
+                  <b>Date:</b> July - August (Exact Dates TBA)<br/>
+                  <b>Time:</b> Tues & Thurs from 7:30PM - 9:00PM (Might Change)<br/>
+                  <b>Location:</b> CHEC (Classroom TBA)<br/>
+                  <b>Grade:</b> 9 - 12
+                </p>
+              </div>
+            </row>
+          </div>
+        </div>
+        <% /* /.row */ %>
+      </div>
+      <% /* /.container */ %>
+    </section>
+
+    <% /* Contact */ %>
+    <section id="contact" style="padding-bottom: 30px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>CHEC Summer Coding Session Signup</h2>
+            <hr class="star-primary">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+            <!-- <form name="sentMessage" id="contactForm" novalidate> -->
+              <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls" style="border-top: 1px solid #eee;">
+                  <label>Name</label>
+                  <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your full name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                  <label>Email</label>
+                  <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                  <label>School</label>
+                  <input type="text" class="form-control" placeholder="School" id="school" required data-validation-required-message="Please enter your name of your school.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="row control-group">
+                <select class="form-control floating-label-form-group-select controls" id="gender">
+                  <option value="" disabled selected>Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+              <div class="row control-group">
+                <select class="form-control floating-label-form-group-select controls" id="age">
+                  <option value="" disabled selected>Age</option>
+
+                  <% /* ageRange is a variable passed in from the routes */ %>
+                  <% for (var i = ageRange.min; i < ageRange.max; i++) { %>
+                    <option value="<%= i %>"><%= i %></option>
+                  <% } %>
+
+                </select>
+              </div>
+              <br>
+              <div id="success"></div>
+              <div class="row">
+                <div class="form-group col-xs-12">
+                  <button id="sign-up-btn" class="btn btn-success btn-lg">Sign Up</button>
+                </div>
+              </div>
+            <!-- </form> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <% /* JavaScript */ %>
+    <% /* The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ */ %>
+    <section id="services" class="services bg-primary">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-10 col-lg-offset-1">
+            <h2>JavaScript</h2>
+            <hr class="small">
+            <div class="row">
+              <div class="col-xs-12 col-sm-3">
+                <img src="img/javascript.svg">
+              </div>
+              <div class="col-xs-12 col-sm-9 text-left">
+                <h4>
+                  The language of the web and the language of the future. JavaScript is an object-oriented
+                  computer programming language commonly used to create interactive websites and web applications.
+                  Every website on the internet utilizes JavaScript in one way or another.
+                </h4>
+                <h4>
+                  What we'll cover in JavaScript:
+                </h4>
+                <ul>
+                  <li>Syntax</li>
+                  <li>Variables & Data Types</li>
+                  <li>Strings, Arrays and Objects</li>
+                  <li>Functions</li>
+                  <li>JSON</li>
+                  <li>DOM and JQuery</li>
+                </ul>
+              </div>
+            </div>
+            <% /* /.row (nested) */ %>
+          </div>
+          <% /* /.col-lg-10 */ %>
+        </div>
+        <% /* /.row */ %>
+      </div>
+      <% /* /.container */ %>
+    </section>
+
+    <% /* Team */ %>
+    <aside class="call-to-action" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h2 class="section-heading text-pink">Team</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5 text-center">
+            <a href="https://www.linkedin.com/in/hackbyrd"><img src="img/Jonathan.svg" class="team-profile"></a>
+            <h2 class="section-heading text-blue-dark">Jonathan Chen</h2>
+            <h3 class="section-subheading text-pink">Founder and President</h3>
+            <hr>
+            <p class="text-left text-blue">Jonathan is an engineer, entreprenuer, and designer. He graduated from the University of Maryland, College Park with a degree in computer science. His love for computer science inspired the founding of Hack University. Jonathan is most known being one of the co-founders and Chief Technology Officer of a DC tech startup called FiscalNote.</p>
+            <a href="https://www.linkedin.com/in/hackbyrd" class="btn btn-pink-custom btn-lg"><i class="fa fa-linkedin-square fa-fw"></i> Linkedin</a>
+          </div>
+          <hr class="visible-xs">
+          <div class="col-sm-5 col-sm-offset-2 text-center">
+            <a href="https://www.linkedin.com/in/lorynchen"><img src="img/loryn.svg" class="team-profile"></a>
+            <h2 class="section-heading text-blue-dark">Loryn Chen</h2>
+            <h3 class="section-subheading text-pink">Vice President</h3>
+            <hr>
+            <p class="text-left text-blue">Loryn is a designer. Currently an undergrad at the University of Maryland, Baltimore County, Loryn is majoring in Graphic Design with a minor in Computer Science. He serves as UMBC’s Campus Rep for a social media app called Yik Yak. He has a passion for branding, marketing, and designing. Oh, all the images on this site were designed by Loryn</p>
+            <a href="https://www.linkedin.com/lorynchen" class="btn btn-pink-custom btn-lg"><i class="fa fa-linkedin-square fa-fw"></i> Linkedin</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <% /* Filler */ %>
+    <aside class="call-to-action bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h3>The buttons below are impossible to resist.</h3>
+            <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+            <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <% /* Footer */ %>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 text-center">
+            <h4><strong>Start Bootstrap</strong>
+            </h4>
+            <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+            <ul class="list-unstyled">
+              <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+              <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
+              </li>
+            </ul>
+            <br>
+            <ul class="list-inline">
+              <li>
+                <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+              </li>
+            </ul>
+            <hr class="small">
+            <p class="text-muted">Copyright &copy; Your Website 2014</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <% /* jQuery */ %>
+    <script src="js/jquery.js"></script>
+
+    <% /* Bootstrap Core JavaScript */ %>
+    <script src="js/bootstrap.min.js"></script>
+
+    <% /* Custom Theme JavaScript */ %>
+    <script src="js/index.js"></script>
+
+  </body>
+
+</html>

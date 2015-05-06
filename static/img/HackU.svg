@@ -2,12 +2,16 @@
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 490 205" enable-background="new 0 0 490 205" xml:space="preserve">
+	 viewBox="0 0 405.2 157.5" enable-background="new 0 0 405.2 157.5" xml:space="preserve">
+<text transform="matrix(1 0 0 1 -7.2281 127.5433)" fill="#46BDF9" font-family="'Sathu'" font-size="118.4726">Hack</text>
 <g>
-	<text transform="matrix(1 0 0 1 -5.3882 142.8682)" fill="#46BDF9" font-family="'Futura-Medium'" font-size="140.8411">Hack</text>
-	<g>
-		<polygon fill="#FF8484" points="334,3.5 489,3.5 489,124.7 411.5,202.6 334,124.9 		"/>
-		<text transform="matrix(1 0 0 1 359.8916 144.5879)" fill="#FFFFFF" font-family="'Futura-Medium'" font-size="140.8411">U</text>
-	</g>
+	<polygon fill="#FF8484" points="279,141 266.4,1.5 404.3,1.5 391.7,141 335.3,156.5 	"/>
+	<polygon fill="#F9A7A7" points="335.3,144.6 380.9,132.1 391.6,12.9 335.3,12.9 	"/>
+	<polygon fill="#EBEBEB" points="335.3,109.1 335.3,109.1 316.1,103.9 314.8,90.3 305.5,90.3 297.5,90.3 299.9,117.1 335.3,126.9 
+		335.3,126.8 	"/>
+	<polygon fill="#FFFFFF" points="335.3,126.8 335.3,126.9 370.7,117.1 373.1,90.3 365.1,90.3 355.8,90.3 354.6,103.9 335.3,109.1 
+		335.3,109.1 	"/>
+	<polygon fill="#EBEBEB" points="297.5,91.1 292.6,30.6 310.5,29.5 314.8,91.1 298.1,97 	"/>
+	<polygon fill="#FFFFFF" points="373.1,91.2 377.9,30.7 360.4,29.6 355.8,91.2 372.3,98.6 	"/>
 </g>
 </svg>
