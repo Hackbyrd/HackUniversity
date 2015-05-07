@@ -45,6 +45,17 @@
 
   <body>
 
+    <% /* Google Analytics */ %>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-62715223-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
     <% /* Navigation */ %>
     <a id="menu-toggle" href="#" class="btn btn-white btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
@@ -117,7 +128,7 @@
                   <i class="fa fa-suitcase fa-stack-1x text-primary"></i>
                 </span>
                   <h3><strong>1. The Professional</strong></h3>
-                  <h4>First, we bring in real world technical leaders to help educate and mentor you.</h4>
+                  <h4>We bring in real world technical leaders to help educate and mentor you.</h4>
                   <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                   <a href="#" class="btn btn-light">Learn More</a> -->
                 </div>
@@ -129,7 +140,17 @@
                   <i class="fa fa-university fa-stack-1x text-primary"></i>
                 </span>
                   <h3><strong>2. The Class</strong></h3>
-                  <h4>Second, these professionals volunteer to teach a summer coding course on a specific topic (web/mobile/etc.) that you can sign up for.</h4>
+                  <h4>These professionals volunteer to teach a summer coding course on a specific topic (web/mobile/etc.) that you can sign up for.</h4>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                  <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-terminal fa-stack-1x text-primary"></i>
+                </span>
+                  <h3><strong>3. The Code</strong></h3>
+                  <h4>You will get a chance to learn how to code from the professional for free.</h4>
                 </div>
               </div>
               <div class="col-md-3 col-sm-6">
@@ -138,11 +159,11 @@
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-line-chart fa-stack-1x text-primary"></i>
                 </span>
-                  <h3><strong>3. The Results</strong></h3>
-                  <h4>Third, once the session is finished, you'll be able to apply what you learned in the class to create applications.</h4>
+                  <h3><strong>4. The Results</strong></h3>
+                  <h4>Once the session is finished, you'll be able to apply what you learned in the class to create real world applications.</h4>
                 </div>
               </div>
-              <div class="col-md-3 col-sm-6">
+              <!-- <div class="col-md-3 col-sm-6">
                 <div class="service-item">
                   <span class="fa-stack fa-4x">
                   <i class="fa fa-circle fa-stack-2x"></i>
@@ -152,8 +173,14 @@
                   <h4>The first course will be on JavaScript programming taught by FiscalNote CTO, Jonathan Chen. Sign up below!</h4>
                   <a href="#courses" class="btn btn-light">More Info</a>
                 </div>
-              </div>
+              </div> -->
               <% /* /.row (nested) */ %>
+            </div>
+            <br/>
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <a href="#courses" class="btn btn-light">Sign up for the first summer coding session!</a>
+              </div>
             </div>
             <% /* /.row (nested) */ %>
           </div>
@@ -171,7 +198,7 @@
           <div class="col-lg-12 text-center">
             <h2 class="text-pink">Hack University @ <a href="http://checdc.org/home.php">Columbia Heights Education Campus</a></h2>
             <hr class="small text-blue">
-            <row>
+            <div class="row">
               <div class="col-xs-12 col-sm-6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.7601634163216!2d-77.03555999999999!3d38.92945900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c821b2ee785b%3A0xb6a7c937aa42cb6d!2sColumbia+Heights+Education+Campus!5e0!3m2!1sen!2sus!4v1430631932420" width="100%" height="400" frameborder="0" style="border:0"></iframe>
               </div>
@@ -190,7 +217,7 @@
                   <a href="http://goo.gl/forms/N0rXuf7XOM" target="_blank" class="btn btn-pink-custom btn-lg">Sign Up Now</a>
                 </p>
               </div>
-            </row>
+            </div>
           </div>
         </div>
         <% /* /.row */ %>
@@ -272,8 +299,16 @@
             <h2>Educational Partners</h2>
             <hr class="small">
             <div class="row">
+              <div class="col-xs-12 col-sm-12 text-center">
+                <img src="img/chec.jpg" class="sponsor-img">
+              </div>
+              <div class="col-xs-12 col-sm-12 text-center">
+              <h3>Columbia Heights Education Campus</h3>
+              </div>
+            </div>
+            <div class="row">
               <div class="col-xs-12 col-sm-12">
-                <a href="http://goo.gl/forms/qYubLRlqjB" target="_blank" class="btn btn-light btn-lg">Partnership Form</a>
+                <a href="http://goo.gl/forms/qYubLRlqjB" target="_blank" style="margin-top: 30px;" class="btn btn-light btn-lg">Become a Partner</a>
               </div>
             </div>
             <% /* /.row (nested) */ %>
@@ -291,11 +326,17 @@
         <div class="row">
           <div class="col-xs-12 text-center">
             <h2 class="section-heading text-pink">Sponsors</h2>
+            <hr class="small">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 text-center">
+            <img src="img/fn.svg" class="col-xs-12 col-sm-10 col-md-8 col-lg-4 col-sm-offset-1 col-md-offset-2 col-lg-offset-4" style="margin-top: 20px; margin-bottom: 30px;">
           </div>
         </div>
         <div class="row">
           <div class="col-sm-12 text-center">
-            <a href="" target="_blank" class="btn btn-pink-custom btn-lg">Sponsorship Form</a>
+            <a href="" target="_blank" class="btn btn-pink-custom btn-lg">Become a Sponsor</a>
           </div>
         </div>
       </div>
@@ -353,7 +394,7 @@
           <div class="col-sm-5 text-center">
             <a href="https://www.linkedin.com/in/hackbyrd"><img src="img/Jonathan.svg" class="team-profile"></a>
             <h2 class="section-heading text-blue-dark">Jonathan Chen</h2>
-            <h3 class="section-subheading text-pink">Founder and President</h3>
+            <h3 class="section-subheading text-pink">President</h3>
             <hr>
             <p class="text-left text-blue">Jonathan is an engineer, entreprenuer, and designer. He graduated from the University of Maryland, College Park with a degree in computer science. His love for computer science inspired the founding of Hack University. Jonathan is best known being one of the co-founders and Chief Technology Officer of a DC tech startup called FiscalNote.</p>
             <a href="https://www.linkedin.com/in/hackbyrd" class="btn btn-pink-custom btn-lg"><i class="fa fa-linkedin-square fa-fw"></i> Linkedin</a>
