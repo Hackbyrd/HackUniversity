@@ -93,3 +93,9 @@
   transform: rotate(360deg);
   cursor: pointer;
 }
+
+.hacku-footer {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
