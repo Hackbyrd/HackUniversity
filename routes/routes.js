@@ -7,7 +7,7 @@ module.exports = function (app, passport) {
     console.log('Home')
     res.render('index.ejs', {
       ageRange: { min: 13, max: 19 },
-      title: "Black University"
+      title: "Hack University"
     });
   });
 
