@@ -5,7 +5,10 @@ module.exports = function (app, passport) {
   // home
   app.get('/', function (req, res) {
     console.log('Home')
-    res.render('index.ejs', { ageRange: { min: 13, max: 19 } });
+    res.render('index.ejs', {
+      ageRange: { min: 13, max: 19 },
+      title: "Black University"
+    });
   });
 
   // // show one user
