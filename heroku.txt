@@ -3,5 +3,7 @@ heroku logs
 heroku open
 heroku restart
 
+git remote add heroku git@heroku.com:hack-university.git
+
 git push heroku master
 heroku ps:scale web=1
