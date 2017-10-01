@@ -24,7 +24,9 @@ const PORT = process.env.PORT ? Number(process.env.PORT) : 8888;
 var app = express();
 
 // add middleware and they must be in order
-app.use(morgan('dev')); // only on development
+if (ENV === 'development')
+  app.use(morgan('dev')); // only on development
+
 app.use(bodyParser.json()); // raw json
 app.use(bodyParser.urlencoded({ extended: false })); // application/x-www-form-urlencoded
 
